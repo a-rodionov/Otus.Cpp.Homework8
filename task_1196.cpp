@@ -86,7 +86,7 @@ int main()
     if(std::binary_search(std::cbegin(teachers), std::cend(teachers), year))
       ++intersections;
   }
-  
   std::cout << intersections;
+  
   return 0;
 }

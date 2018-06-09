@@ -47,6 +47,8 @@
 
 #include <iostream>
 #include <set>
+#include <algorithm>
+#include <iterator>
 
 int main()
 {
@@ -66,8 +68,9 @@ int main()
       participants.insert(participant);
   }
 
-  for (const auto& spammer : spammers)
-    std::cout << spammer << std::endl;
+  std::copy(std::cbegin(spammers),
+            std::cend(spammers),
+            std::ostream_iterator<std::string>(std::cout, "\n"));
 
   return 0;
 }
