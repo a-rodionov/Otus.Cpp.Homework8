@@ -59,6 +59,8 @@ int main()
   std::size_t count;
   std::string word;
   std::multimap<char, char> dictionary;
+
+  std::ios::sync_with_stdio(false);
   
   std::cin >> count;
   for(decltype(count) i{0}; i < count; ++i) {

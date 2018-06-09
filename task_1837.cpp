@@ -76,6 +76,8 @@ int main()
   std::list<std::list<std::string>> commands;
   std::map<std::string, int> result;
   bool is_Isenbaev_present{false};
+
+  std::ios::sync_with_stdio(false);
   
   // Составление списка команд из списков фамилий.
   // Одновременно идет поиск фамилии "Isenbaev". Если

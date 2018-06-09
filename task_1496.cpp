@@ -55,6 +55,8 @@ int main()
   std::set<std::string> participants;
   std::set<std::string> spammers;
 
+  std::ios::sync_with_stdio(false);
+
   std::cin >> count;
   for(decltype(count) i{0}; i < count; ++i) {
     std::cin >> participant;
